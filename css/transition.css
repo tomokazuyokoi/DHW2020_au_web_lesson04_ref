@@ -1,0 +1,85 @@
+
+
+/*  .transition04
+-------------------------------*/
+.transition04{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 0 300px 32px;
+}
+.transition04 p:nth-of-type(1){
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* アニメーションの設定 */
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+.transition04 p:nth-of-type(2){
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* アニメーションの設定 */
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+.transition04 p:nth-of-type(3){
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    /* アニメーションの設定 */
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+.transition04 p:nth-of-type(4){
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: rotateY(0deg);
+    /* アニメーションの設定 */
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+/* マウスホーバーのアニメーション */
+.transition04:hover p:nth-of-type(1){
+    left: 300px;
+    /* transform: rotateY(-60deg); */
+    transform: perspective(1000px) rotateY(-60deg);
+}
+.transition04:hover p:nth-of-type(2){
+    left: 200px;
+    /* transform: rotateY(-60deg); */
+    transform: perspective(1000px) rotateY(-60deg);
+}
+.transition04:hover p:nth-of-type(3){
+    left: 100px;
+    /* transform: rotateY(-60deg); */
+    transform: perspective(1000px) rotateY(-60deg);
+}
+.transition04:hover p:nth-of-type(4){
+    left: 0;
+    /* transform: rotateY(-60deg); */
+    transform: perspective(1000px) rotateY(-60deg);
+}
